@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 // import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import ReactSlidy from "react-slidy";
-import 'react-slidy/lib/styles.css'
+import "react-slidy/lib/styles.css";
 import SimpleImageSlider from "react-simple-image-slider";
+import Carousel from "react-bootstrap/Carousel";
 
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+// import Carousel from "react-multi-carousel";
 
 export default function MuseumContent() {
   const [museum, setMuseum] = useState([]);
@@ -36,32 +36,26 @@ export default function MuseumContent() {
   }, []);
 
   console.log(museum);
-  
 
   return (
-    <div>
-      {/* <FaArrowAltCircleLeft className="right-arrow" onClick={prevSlide} />
-      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} /> */}
-      {/* <Carousel responsive={responsive}> */}
-        <ReactSlidy numOfSlides={3} imageObjectFit="contain" useFullWidth={false}>
-        
-        {museum.map((item) => (
-          <div>
-            {/* {item.objectName} */}
-            {/* <img className="image" src={item.thumbnail.uri} alt="museum item" /> */}
-            
-
+    <div className='container-fluid'>
+      <Carousel variant="dark">
+        {museum.map((item, index) => index < 5 && (
+          <Carousel.Item>
             {item.media.map((image) => (
-              <img style={{maxHeight: '300px', maxWidth: '300px'}}
-              className="img-slider" src={image.thumbnail.uri} alt="museum item" />
+              <img
+                className="d-block w-50 api-image"
+                src={image.thumbnail.uri}
+                alt="museum item"
+              />
             ))}
-            {/* <img src= {item.media.thumbnail.uri} alt='item' /> */}
-
-            
-          </div>
+            <Carousel.Caption>
+                {item.objectName}
+              </Carousel.Caption> 
+          </Carousel.Item>
         ))}
-      {/* </Carousel> */}
-      </ReactSlidy>
+      </Carousel>
     </div>
   );
 }
+

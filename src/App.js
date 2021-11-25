@@ -4,6 +4,7 @@ import Main from './components/Main'
 import Events from './components/Events'
 import MuseumContent from './components/MuseumContent';
 
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   

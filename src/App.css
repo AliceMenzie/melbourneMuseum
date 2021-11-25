@@ -115,41 +115,11 @@ ul.tags {
 }
 
 
- /* div.react-Slidy.react-Slidy--contain {
-  max-width: 600px;
-} */
-
-/* img.img-slider {
-  max-height: 300px;
-  max-height: 300px;
-} */ 
-
-/* .slider {
-  position: relative;
-  height: 100vh;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .image {
-  max-width: 600px;
-  border-radius: 10px;
+.api-image {
+  
+  margin: auto;
+  margin-bottom: 6rem;
 }
-
-.right-arrow {
-  position: absolute;
-  top: 50%;
-  right: 32px;
-  font-size: 3rem;
-  color: plum;
-  z-index: 10;
+.container-fluid {
+  max-width: 50%;
 }
-.left-arrow {
-  position: absolute;
-  top: 50%;
-  left: 132px;
-  font-size: 3rem;
-  color: plum;
-  z-index: 10;
-} */
