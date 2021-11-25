@@ -4,13 +4,15 @@ export default function NavBar() {
     return (
         <nav className="navbar">
             <div className="navbar-header">
-                Melbourne Museum
+                <p><strong>Melbourne </strong>  Museum</p>
             </div>
             <div className="navbar-links">
                 <ul>
-                    <li>articles</li>
-                    <li>games</li>
-                    <li>events</li>
+                    <li>Join</li>
+                    <li>Play</li>
+                    <li>Shop</li>
+                    <li>Donate</li>
+                    <li>Tickets</li>
                 </ul>
             </div>
         </nav>

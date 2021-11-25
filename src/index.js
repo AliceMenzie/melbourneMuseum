@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { GraphQLClient, ClientContext } from 'graphql-hooks'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 const client = new GraphQLClient({
   url: "https://graphql.datocms.com/",
   headers: {

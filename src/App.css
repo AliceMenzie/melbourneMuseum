@@ -9,15 +9,20 @@
 .navbar {
  display: flex;
  align-items: center;
- justify-content: center;
- flex-direction: column;
- padding-top: 2rem;
+ justify-content: space-between;
+ flex-direction: row;
+ padding: 2rem;
  background-color: rgb(67, 151, 243);
  color: white;
+ text-transform: uppercase;
+ 
 }
 
 .navbar-header {
-  font-size: 3rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  max-width: 100px;
+  
 }
 
 .navbar-links ul {
@@ -27,6 +32,8 @@
  flex-direction: row;
  text-decoration: none;
  list-style-type: none;
+ font-weight: bold;
+ font-size: 0.8rem;
  
 
 }
